@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:2.2.3'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
     }
@@ -19,12 +19,12 @@ allprojects {
 
 ext {
     minSdkVersion = 14
-    targetSdkVersion = 25
-    compileSdkVersion = 25
+    targetSdkVersion = 23
+    compileSdkVersion = 23
     buildToolsVersion = '25.0.2'
 
     // dependencies
-    supportV7 = 'com.android.support:appcompat-v7:25.3.0'
+    supportV7 = 'com.android.support:appcompat-v7:23+'
     rxJava = 'io.reactivex.rxjava2:rxjava:2.0.2'
     rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.0'
 }

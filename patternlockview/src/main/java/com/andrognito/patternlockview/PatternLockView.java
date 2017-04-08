@@ -15,7 +15,6 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
 import android.support.annotation.ColorInt;
-import android.support.annotation.Dimension;
 import android.support.annotation.IntDef;
 import android.util.AttributeSet;
 import android.view.HapticFeedbackConstants;
@@ -616,14 +615,14 @@ public class PatternLockView extends View {
         mCorrectStateColor = correctStateColor;
     }
 
-    public void setPathWidth(@Dimension int pathWidth) {
+    public void setPathWidth( int pathWidth) {
         mPathWidth = pathWidth;
 
         initView();
         invalidate();
     }
 
-    public void setDotNormalSize(@Dimension int dotNormalSize) {
+    public void setDotNormalSize(int dotNormalSize) {
         mDotNormalSize = dotNormalSize;
 
         for (int i = 0; i < sDotCount; i++) {
@@ -636,7 +635,7 @@ public class PatternLockView extends View {
         invalidate();
     }
 
-    public void setDotSelectedSize(@Dimension int dotSelectedSize) {
+    public void setDotSelectedSize( int dotSelectedSize) {
         mDotSelectedSize = dotSelectedSize;
     }
 
